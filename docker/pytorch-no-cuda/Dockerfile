@@ -22,7 +22,7 @@ RUN curl -o ~/miniconda.sh -O  https://repo.continuum.io/miniconda/Miniconda3-la
 
 ENV PATH /opt/conda/bin:$PATH
 
-RUN pip install tensorboard tensorboardX
+RUN pip install tensorboard tensorboardX tensorflow
 
 WORKDIR /workspace
 RUN chmod -R a+w /workspace
